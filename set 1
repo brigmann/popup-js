@@ -1,0 +1,16 @@
+// Set the countdown time in seconds
+var countdownTime = 10;
+
+// Create the popup window
+var popup = window.open('https://www.example.com/advertisement', '_blank', 'width=500,height=500');
+
+// Set the countdown timer
+var countdownTimer = setInterval(function() {
+  countdownTime--;
+  if (countdownTime <= 0) {
+    clearInterval(countdownTimer);
+    popup.close();
+  } else {
+    popup.document.getElementById('countdown').innerHTML = countdownTime;
+  }
+}, 1000);
