@@ -1,4 +1,4 @@
-// Set the countdown time in seconds
+// Set the countdown time in seconds 
 var countdownTime = 10;
 
 // Create the popup window
